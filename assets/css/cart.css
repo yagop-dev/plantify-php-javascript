@@ -192,3 +192,52 @@ body{
     justify-content: right;
     gap: 3%;
 }
+
+
+.product-info-container{
+    display: flex;
+    flex-direction: column;
+    height: 25dvh; 
+    width: 94dvw;
+    margin-top: 5%;
+    margin-left: 3%;
+}
+.product-text{
+    flex: 0 0 12;
+    width: 100%;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    margin-bottom: 1%;
+}
+
+.product-table{
+    flex: 1;
+    width: 50%;
+    border-collapse: collapse;
+    table-layout: fixed;
+    font-family: "Montserrat", sans-serif;
+}
+
+.product-table td{
+    text-align: center;
+    vertical-align: middle;
+}
+
+.product-table tr:first-child {
+    height: 10%;
+}
+
+.product-table tr:nth-child(2) td:first-child {
+    height: calc(100% - 10%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+}
+
+#product-img {
+    max-height: 100%;
+    width: auto;
+    object-fit: contain;
+}
