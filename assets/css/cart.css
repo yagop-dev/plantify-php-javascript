@@ -120,7 +120,7 @@ body{
 .client-data-container{
     display: flex;
     flex-direction: column;
-    height: 23dvh; 
+    height: 30dvh; 
     width: 94dvw;
     margin-top: 5%;
     margin-left: 3%;
@@ -240,4 +240,37 @@ body{
     max-height: 100%;
     width: auto;
     object-fit: contain;
+}
+
+@media (max-width: 1400px) {
+    .product-table {
+        width: 60%;
+    }
+}
+@media (max-width: 1200px) {
+    .product-table {
+        width: 70%;
+    }
+}
+
+@media (max-width: 1000px) {
+    .product-table {
+        width: 80%;
+    }
+}
+@media (max-width: 900px) {
+    .product-table {
+        width: 90%;
+    }
+}
+
+@media (max-width: 800px) {
+    main {
+        display: block;
+    }
+
+    .client-data, .product-table, .main-container {
+        width: 100%;
+        gap: 10%;
+    }
 }
