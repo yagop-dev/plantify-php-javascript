@@ -56,6 +56,10 @@ main{
     gap: 30%;
 }
 
+.client-data-text{
+    font-weight: 600;
+}
+
 .data-text{
     height: 20%;
     width: 100%;
@@ -72,7 +76,7 @@ main{
     text-overflow: ellipsis;
 }
 
-.item-container{
+.item-container-mobile{
     height: 250px;
     width: 100%;
     padding: 3%;
@@ -81,6 +85,10 @@ main{
     flex-direction: column;
     gap: 1rem;
     color: black;
+}
+
+.item-container-desktop{
+    display: none;
 }
 
 .item-img-name{
@@ -129,7 +137,7 @@ main{
     font-weight: 600;
 }
 
-.address-main-container{
+.address-container-mobile{
     height: 250px;
     width: 100%;
     padding: 3%;
@@ -138,6 +146,10 @@ main{
     flex-direction: column;
     gap: 1rem;
     color: black;
+}
+
+.address-container-desktop{
+    display: none;
 }
 
 .address-container{
@@ -309,26 +321,18 @@ main{
         gap: 50%;
     }
 
-    .item-container{
-        flex-direction: row;
-        width: 100%;
+    .item-container-mobile{
+        display: none;
     }
 
-    .item-list-container{
-        height: 100%;
+    .item-container-desktop{
+        height: 250px;
         width: 100%;
+        padding: 3%;
+        padding-top: 0%;
         display: flex;
-        flex-direction: row;
-    }
-
-    .item-info-container{
-        height: 100%;
-        width: 60%;
-    }
-    
-    .item-title-img{
-        width: 40%;
-        height: 100%;
+        flex-direction: column;
+        gap: 20px;
     }
     
     .title-list{
@@ -336,15 +340,25 @@ main{
         width: 100%;
     }
 
-    .item-img-name{
-        height: 80%;
-        width: 100%;
-        margin-top: 0%;
+    .item-table{
+        text-align: center;
     }
 
-    #item-img{
-        height: auto;
-        width: 150px;
+    .address-container-mobile{
+        display: none;
+    }
+
+    .address-container-desktop{
+        height: 250px;
+        width: 100%;
+        padding: 3%;
+        padding-top: 0%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .address-table{
+        margin-top: 5%
     }
 
     .resume-main-container{
@@ -381,10 +395,8 @@ main{
         gap: 50%;
     }
 
-    .item-container{
-        flex-direction: row;
+    .item-container-desktop{
         width: 60%;
-        margin-bottom: 0%;
     }
 
     .item-img-name{
@@ -399,17 +411,8 @@ main{
         gap: 35%;
     }
 
-    .address-main-container{
+    .address-container-desktop{
         width: 60%;
-    }
-
-    .address-text{
-        width: 10%;
-        gap: 27px;
-    }
-
-    .address-input-container{
-        gap: 20px;
     }
 
     .payment-item-container{
@@ -440,41 +443,7 @@ main{
         width: 50%;
     }
 
-    .item-container{
-        height: 300px;
-        width: 100%;
-        justify-content: center;
-        padding: 2%;
-        padding-top: 1%
-    }
 
-    .item-list-container{
-        height: 100%;
-        width: 50%;
-        display: flex;
-        flex-direction: row;
-    }
-
-    .item-title-img{
-        width: 30%;
-    }
-
-    .item-img-name{
-        margin-top: 0%;
-    }
-
-    .item-info-container{
-        margin-top: 0%;
-        width: 40%;
-        gap:1%;
-    }
-
-    .address-main-container{
-        width: 100%;
-        padding-top:0%;
-        align-items: center;
-        margin: 0%;
-    }
     .title-address{
         width: 50%;
     }

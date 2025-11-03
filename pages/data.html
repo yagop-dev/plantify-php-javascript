@@ -9,8 +9,8 @@
     <link rel="stylesheet" href="../assets/css/data.css">
 </head>
 <body>
-    <header>
-        <nav class="nav">
+    <header class="mobile-header">
+        <nav>
             <img src="../assets/img/nav_icon.png" alt="navigation menu" id="nav-img">
         </nav>
         <div class="logo">
@@ -27,6 +27,28 @@
         </div>
     </header>
 
+    <header class="desktop-header">
+        <div class="logo">
+            <img src="../assets/img/plantify_icon_green.png" alt="logo" id="logo-img">
+            <h3>Plantify</h3>
+        </div>
+        <div class="home-shop">
+            <button class="home-shop-btn">Home</button>
+            <button class="home-shop-btn">Shop</button>
+        </div>
+        <div class="header-btn-icon">
+            <button class="header-icon">
+                <img src="../assets/img/search_green.png" alt="search button" id="search-img">
+            </button>
+            <button class="header-icon">
+                <img src="../assets/img/cart_green.png" alt="shop button" id="shop-img">
+            </button>
+            <button class="header-icon">
+                <img src="../assets/img/login_green.png" alt="login button" id="login-img">
+            </button>
+        </div>
+    </header>
+
     <main>
         <div class="data-container">
             <div class="container">
@@ -34,21 +56,21 @@
                 <div class="data">
                     <div class="client-data">
                         <div class="data-text">
-                            <p>Nome:</p>
+                            <p class="client-data-text">Nome:</p>
                             <p class="long-text">Nome de Usuário</p>
                         </div>
                         <div class="data-text">
-                            <p>Data Nasc:</p>
+                            <p class="client-data-text">Data Nasc:</p>
                             <p>00/00/0000</p>
                         </div>
                     </div>
                     <div class="client-data">
                         <div class="data-text">
-                            <p>CPF</p>
+                            <p class="client-data-text">CPF</p>
                             <p>000.000.000-00</p>
                         </div>
                         <div class="data-text">
-                            <p>RG:</p>
+                            <p class="client-data-text">RG:</p>
                             <p>0.000.000.00</p>
                         </div>
                     </div>
@@ -56,7 +78,7 @@
             </div>
         </div>
 
-        <div class="item-container">
+        <div class="item-container-mobile">
             <div class="item-list-container">
                 <div class="item-title-img">
                     <p class="title-list">LISTA DE PRODUTOS</p>
@@ -82,7 +104,27 @@
             </div>
         </div>
 
-        <div class="address-main-container">
+        <div class="item-container-desktop">
+            <p class="title-list">LISTA DE PRODUTOS</p>
+            <table class="item-table">
+                <tr>
+                    <td>ITEM</td>
+                    <td></td>
+                    <td>PREÇO</td>
+                    <td>QTD</td>
+                    <td>SUBTOTAL</td>
+                </tr>
+                <tr>
+                    <td><img src="../assets/img/Samambaia.png" alt="Samambaia" id="item-img"></td>
+                    <td>Samambaia</td>
+                    <td>R$70,00</td>
+                    <td>1</td>
+                    <td>R$70,00</td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="address-container-mobile">
             <p class="title-address">ENDEREÇO</p>
             <div class="address-container">
                 <div class="address-text">
@@ -98,6 +140,24 @@
                     <input class="address-input">
                 </div>
             </div>
+        </div>
+
+        <div class="address-container-desktop">
+            <p class="title-address">ENDEREÇO</p>
+            <table class="address-table">
+                <tr>
+                    <td>Rua:</td>
+                    <td><input class="address-input"></td>
+                    <td>Cidade:</td>
+                    <td><input class="address-input"></td>
+                </tr>
+                <tr>
+                    <td>Endereço:</td>
+                    <td><input class="address-input"></td>
+                    <td>CEP:</td>
+                    <td><input class="address-input"></td>
+                </tr>
+            </table>
         </div>
 
         <div class="resume-main-container">

@@ -12,7 +12,7 @@ body{
     background-color: #e5ebe1;
 }
 
-header{
+.mobile-header{
     height: 60px;
     width: 100%;
     top:-1px;
@@ -26,7 +26,11 @@ header{
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
-.nav{
+.desktop-header{
+    display: none;
+}
+
+nav{
     height: 100%;
     width: 10%;
     display: flex;
@@ -66,6 +70,10 @@ header{
     align-items: center;
 }
 
+.header-button-icon{
+    display: none;
+}
+
 .header-button{
     height: 100%;
     width: 40%;
@@ -83,6 +91,11 @@ header{
 }
 
 #shop-img{
+    height: auto;
+    width: 2rem;
+}
+
+#login-img{
     height: auto;
     width: 2rem;
 }
@@ -193,6 +206,101 @@ footer hr{
 /*---------------------------------------------------------  1080px -----------------------------------------------------------*/
 
 @media(min-width:1080px) {
+
+    .mobile-header{
+        display: none;
+    }
+
+    .desktop-header{
+        height: 60px;
+        width: 100%;
+        top:-1px;
+        display: flex;
+        flex-direction: row;
+        position: fixed;
+        justify-content: left;
+        background-color: #e5ebe1;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    }
+
+    .logo{
+        width: 12%;
+        margin-left: 1%;
+        cursor: pointer;
+    }
+
+    .home-shop{
+        height: 100%;
+        width: 70%;
+        background-color: #e5ebe1;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 20%;
+    }
+
+    .home-shop-btn{
+        height: 100%;
+        width: auto;
+        font-size: 1.2rem;
+        font-family: "Montserrat", sans-serif;
+        border: none;
+        cursor: pointer;
+        background-color: #e5ebe1;
+        color: #689e83;
+        font-weight: 500;
+
+        transition: 0.2s;
+
+    }
+
+    .home-shop-btn:hover{
+        color:#689e8370;
+    }
+
+    .header-btn-icon{
+        height: 100%;
+        width: 18%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 15%;
+        background-color: #e5ebe1;
+    }
+
+    .header-icon{
+        height: 100%;
+        width: auto;
+        border: none;
+        background-color: transparent;
+        cursor: pointer;
+
+        transition: 0.2s;
+    }
+
+    #search-img{
+        height: auto;
+        width: 30px;
+        margin-bottom: 4px;
+    }
+
+    #shop-img{
+        height: auto;
+        width: 33px;
+        margin-top: 1px;
+    }
+
+    #login-img{
+        height: auto;
+        width: 35px;
+        margin-top: 1px;
+    }
+
+    .header-icon:hover{
+        transform: scale(1.2);
+    }
 
     .footer-infos{
         gap: 15%;
