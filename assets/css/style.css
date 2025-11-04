@@ -225,8 +225,12 @@ footer hr{
 
     .logo{
         width: 12%;
-        margin-left: 1%;
+        margin-left: 2%;
         cursor: pointer;
+    }
+    
+    #logo-img{
+        width: 60px;
     }
 
     .home-shop{
@@ -243,7 +247,7 @@ footer hr{
     .home-shop-btn{
         height: 100%;
         width: auto;
-        font-size: 1.2rem;
+        font-size: 1.3rem;
         font-family: "Montserrat", sans-serif;
         border: none;
         cursor: pointer;
@@ -266,7 +270,7 @@ footer hr{
         flex-direction: row;
         justify-content: center;
         align-items: center;
-        gap: 15%;
+        gap: 23%;
         background-color: #e5ebe1;
     }
 
@@ -282,19 +286,19 @@ footer hr{
 
     #search-img{
         height: auto;
-        width: 30px;
+        width: 25px;
         margin-bottom: 4px;
     }
 
     #shop-img{
         height: auto;
-        width: 33px;
+        width: 28px;
         margin-top: 1px;
     }
 
     #login-img{
         height: auto;
-        width: 35px;
+        width: 30px;
         margin-top: 1px;
     }
 

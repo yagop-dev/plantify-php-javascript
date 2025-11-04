@@ -6,6 +6,10 @@ main{
     font-family: "Montserrat", sans-serif;
 }
 
+button{
+    cursor: pointer;
+}
+
 .data-container{
     padding: 3%;
 }
@@ -21,6 +25,10 @@ main{
     background-color: #689e83;
     color: white;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.container .title{
+    font-weight: 600;
 }
 
 .title{
@@ -297,7 +305,7 @@ main{
     align-items: center;
 }
 
-#buy-button{
+#buy-btn{
     height: 35px;
     width: 300px;
     font-size: 1.1rem;
@@ -330,6 +338,7 @@ main{
         width: 100%;
         padding: 3%;
         padding-top: 0%;
+        margin-bottom: 2%;
         display: flex;
         flex-direction: column;
         gap: 20px;
@@ -342,6 +351,29 @@ main{
 
     .item-table{
         text-align: center;
+    }
+
+    .item-table tr:nth-child(2) td:nth-child(3){
+        color: #689e83;
+        font-weight: 600;
+    }
+    
+    .item-table tr:nth-child(2) td:nth-child(4){
+        color: #689e83;
+        font-weight: 600;
+    }
+    
+    .item-table tr:nth-child(2) td:nth-child(5){
+        color: #689e83;
+        font-weight: 600;
+    }
+    
+    .item-table td:first-child{
+        width: 150px;
+    }
+    #item-img{
+        height: auto;
+        width: 150px;
     }
 
     .address-container-mobile{
@@ -358,7 +390,27 @@ main{
     }
 
     .address-table{
-        margin-top: 5%
+        margin-top: 5%;
+    }
+
+    .address-table tr{
+        height: 70px;
+    }
+
+    .address-table td:nth-child(1){
+        width: 13%;
+    }
+
+    .address-table td:nth-child(2){
+        width: 37%;
+    }
+    .address-table td:nth-child(5){
+        width: 37%;
+    }
+
+    .address-table td:nth-child(4){
+        padding-left: 3%;
+        width: 13%;
     }
 
     .resume-main-container{
@@ -414,7 +466,15 @@ main{
     .address-container-desktop{
         width: 60%;
     }
+    
+    .address-table{
+        margin-top: 1%;
+    }
 
+    .address-table tr{
+        height: 100px;
+    }
+    
     .payment-item-container{
         width: 40%;
         height: 250px;
@@ -441,11 +501,22 @@ main{
         padding: 2%;
         padding-top: 1%;
         width: 50%;
+        margin-bottom: 1%;
     }
-
 
     .title-address{
         width: 50%;
+    }
+    
+    .item-table{
+        width: 70%;
+    }
+
+    .item-container-desktop{
+        width: 100%;
+        padding-left: 26%;
+        padding-right: 25%;
+        gap: 20%;
     }
 
     .address-container{
@@ -453,8 +524,34 @@ main{
         margin: 0%;
     }
 
+    .address-container-desktop{
+        width: 100%;
+        padding-left: 26%;
+        padding-right: 25%;
+    }
+
+    .address-table{
+        width: 80%;
+    }
+
+    .address-table td:nth-child(1){
+        width: 8%;
+    }
+
+    .address-table td:nth-child(2){
+        width: 40%;
+    }
+    .address-table td:nth-child(5){
+        width: 40%;
+    }
+
+    .address-table td:nth-child(4){
+        padding-left: 3%;
+        width: 12%;
+    }
+
     .address-input{
-        padding-left: 1%;
+        padding-left: 2%;
     }
 
     .resume-main-container{
@@ -467,6 +564,7 @@ main{
         height: 240px;
         width: 20%;
         padding: 40px;
+        padding-left: 1%
     }
     
     .payment-container{
@@ -475,5 +573,6 @@ main{
     
     .resume-container{
         width: 30%;
+        padding-right: 0%;
     }
 }
