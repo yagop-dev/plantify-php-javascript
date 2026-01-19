@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+    list-style: none;
+    text-decoration: none;
+    background-color: transparent;
+}
+
+body {
+    height: 100vh;
+    background-color: #D0C9C4;
+}
+
+.brand {
+    color: rgb(0, 0, 0);
+}
+
+li {
+    color: rgb(0, 0, 0);
+}
+
+li:hover {
+    color: rgb(85, 85, 85);
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    padding: 40px 50px 30px 50px;
+}
+
+main h3 {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+main hr {
+    border: none;
+    height: 1px;
+    background-color: #000000;
+    margin-top: 10px;
+}
+
+.resultsContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    padding: 40px 0;
+}
+
+.line {
+    display: flex;
+    gap: 130px;
+}
+
+.item-content {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    cursor: pointer;
+}
+
+.item {
+    width: 215px;
+    height: 205px;
+    background-color: white;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    position: relative;
+}
+
+.plant-img {
+    width: 80%;
+    height: 80%;
+}
+
+.item .cart {
+    width: 25px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    transition: .4s;
+}
+
+.item .cart:hover {
+    transform: scale(1.1);
+}
+
+.info {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.item-name {
+    font-weight: 500;
+}
+
+.item-price {
+    color: #015D20;
+}
+
+.move-content {
+    margin-top: 70px;
+    display: flex;
+    gap: 60px;
+}
+
+.back, .next {
+    font-weight: 600;
+    font-size: 18px;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.back:hover, .next:hover {
+    color: #383838;
+}
+
+/*-----footer------*/
+
+footer {
+    background-color: #f3f3f3;
+    position: absolute;
+    bottom: 0;
+}

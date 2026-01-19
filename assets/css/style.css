@@ -4,12 +4,8 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-}
-
-body{
-    display: flex;
-    flex-direction: column;
-    background-color: #e5ebe1;
+    text-decoration: none;
+    user-select: none;
 }
 
 .mobile-header{
@@ -42,17 +38,6 @@ nav{
 #nav-img{
     height: auto;
     width: 2rem;
-}
-
-.logo{
-    height: 100%;
-    width: 37%;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content:center;
-    color: #689e83;
-    font-size: 1.5rem;
 }
 
 #logo-img{
@@ -100,35 +85,48 @@ nav{
     width: 2rem;
 }
 
-
 /*--------------------------------------------------------- HEADER -----------------------------------------------------------*/
 
 footer{
     height: auto;
     width: 100%;
-    margin-top: 5%;
-    padding: 5%;
-    background-color: white;
-    font-family: "Montserrat", sans-serif;
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    padding: 2% 3%;
 }
 
 .logo-footer{
-    height: 100%;
-    width: 100%;
+    width: 100px;
     display: flex;
-    flex-direction: row;
     align-items: center;
     justify-content: flex-start;
     color: black;
     font-size: 1rem;
     margin-bottom: 20px;
+    cursor: pointer;
+    gap: 3px;
+}
+
+.logo-footer a {
+    display: flex;
+    align-items: center; 
+    gap: 3px;
+    color: black; 
+}
+
+.logo-footer h3 {
+    font-family: "Playfair Display";
+    letter-spacing: .4px;
+    font-size: 19px;
 }
 
 #logo-img-footer{
     height: auto;
     width: 2rem;
-    margin-bottom: 9px;
+    margin-bottom: 5px;
+}
+
+.footer-infos {
+    display: flex;
+    gap: 200px;
 }
 
 .address-footer{
@@ -147,24 +145,38 @@ footer{
 .icon-footer-container{
     display: flex;
     flex-direction: row;
-    gap: 10px;
+    gap: 20px;
+}
+
+footer .title {
+    margin-bottom: 7px;
+    font-weight: 500;
+    font-size: 17px;
 }
 
 .icon-footer{
     height: auto;
     width: 30px;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.icon-footer:hover {
+    transform: scale(1.1);
 }
 
 footer hr{
-    margin-bottom: 10px;
+    margin-top: 5px;
 }
 
 #copy-mobile{
     display: flex;
+    margin-top: 30px;
 }
 
 #copy-desktop{
     display: none;
+    margin-top: 30px;
 }
 
 /*--------------------------------------------------------- MEDIA QUERY -----------------------------------------------------------*/
@@ -212,98 +224,95 @@ footer hr{
     }
 
     .desktop-header{
-        height: 60px;
-        width: 100%;
-        top:-1px;
         display: flex;
-        flex-direction: row;
-        position: fixed;
-        justify-content: left;
-        background-color: #e5ebe1;
-        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     }
 
-    .logo{
-        width: 12%;
-        margin-left: 2%;
-        cursor: pointer;
-    }
-    
-    #logo-img{
-        width: 60px;
-    }
-
-    .home-shop{
-        height: 100%;
-        width: 70%;
-        background-color: #e5ebe1;
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        gap: 20%;
-    }
-
-    .home-shop-btn{
-        height: 100%;
-        width: auto;
-        font-size: 1.3rem;
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
         font-family: "Montserrat", sans-serif;
-        border: none;
-        cursor: pointer;
-        background-color: #e5ebe1;
-        color: #689e83;
-        font-weight: 500;
-
-        transition: 0.2s;
-
+        list-style: none;
+        text-decoration: none;
     }
 
-    .home-shop-btn:hover{
-        color:#689e8370;
-    }
-
-    .header-btn-icon{
-        height: 100%;
-        width: 18%;
+    header {
+        height: 65px;
+        width: 100%;
         display: flex;
-        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        padding: 5px 50px;
+        z-index: 2;
+    }
+
+    .logo {
+        display: flex;
         justify-content: center;
         align-items: center;
-        gap: 23%;
-        background-color: #e5ebe1;
+        gap: 5px;
+        cursor: pointer;
     }
 
-    .header-icon{
-        height: 100%;
-        width: auto;
-        border: none;
-        background-color: transparent;
+    .logo img {
+        height: 40px;
+    }
+
+    .brand {
+        font-family: "Playfair Display";
+        font-size: 18px;
+        letter-spacing: .4px;
+        font-weight: 500;
+        margin-top: 5px;
+    }
+
+    ul {
+        display: flex;
+        gap: 300px;
+    }
+
+    li {
+        font-size: 17px;
+        cursor: pointer;
+        font-weight: 500;
+        transition: .2s;
+    }
+
+    .icons {
+        display: flex;
+        gap: 50px;
+    }
+
+    .icons img {
+        height: 25px;
+        width: 25px;
+        transition: .2s;
         cursor: pointer;
 
-        transition: 0.2s;
     }
 
-    #search-img{
-        height: auto;
-        width: 25px;
-        margin-bottom: 4px;
+    .icons img:hover {
+        transform: scale(1.1);
     }
 
-    #shop-img{
-        height: auto;
-        width: 28px;
-        margin-top: 1px;
+    .search-input {
+        width: 250px;
+        height: 30px;
+        position: absolute;
+        top: 50px;
+        right: 200px;
+        border: none;
+        border-radius: 10px;
+        padding: 0 10px;
+        outline: none;
+        opacity: 0;
+        pointer-events: none;
+        transition: .3s;
     }
 
-    #login-img{
-        height: auto;
-        width: 30px;
-        margin-top: 1px;
-    }
-
-    .header-icon:hover{
-        transform: scale(1.2);
+    .active {
+        pointer-events: auto;
+        opacity: 1;
     }
 
     .footer-infos{
@@ -320,6 +329,5 @@ footer hr{
     #follow-icon{
         align-items: center;
         width: 33%;
-    }
-  
+    } 
 }

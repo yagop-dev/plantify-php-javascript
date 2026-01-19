@@ -1,0 +1,299 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+    list-style: none;
+    text-decoration: none;
+    background-color: transparent;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    height: 100vh;
+}
+
+/*-------header-------*/
+
+header {
+    position: absolute;
+    top: 0;
+}
+
+.brand {
+    color: rgb(255, 255, 255);
+}
+
+li {
+    color: rgb(255, 255, 255);
+}
+
+li:hover {
+    color: rgb(206, 206, 206);
+}
+
+.search-input {
+    background-color: white;
+    color: black;
+}
+
+/*-----inicio-----*/
+
+main {
+    background-image: url(../img/banner.png);
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    object-fit: contain;
+    background-position: 0 73%;
+    overflow: hidden;
+    position: relative;
+}
+
+.wave {
+    width: auto;
+    height: 700px;
+    position: absolute;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    padding: 50px;
+    top: 22%;
+    gap: 35px;
+}
+
+.title {
+    display: flex;
+    gap: 10px;
+}
+
+.title span {
+    color: white;
+    margin-top: 10px;
+    font-size: 23px;
+}
+
+.title img {
+    width: 45px;
+}
+
+.callToAction {
+    width: 400px;
+    color: white;
+    font-size: 18px;
+}
+
+.content button {
+    width: 200px;
+    height: 40px;
+    background-color: white;
+    color: rgb(70, 70, 70);
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 2px 5px -1px, rgba(0, 0, 0, 0.4) 0px 1px 3px -1px;
+    font-size: 17px;
+    border: none;
+    border-radius: 10px;
+    transition: .3s;
+    cursor: pointer;
+}
+
+.content button:hover {
+    background-color: rgb(228, 228, 228);
+}
+
+/* Loja 1 */
+
+.shop {
+    height: 100vh;
+    background-color: #D0C9C4;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 50px 100px;
+}
+
+.new-arrivals-content {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.announcement {
+    width: 550px;
+    height: 220px;
+    display: flex;
+    background-color: #E5E5E5;
+    border-radius: 10px;
+    justify-content: space-around;
+    align-items: center;
+    gap: 20px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    cursor: pointer;
+}
+
+.texts {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.texts span {
+    font-size: 15px;
+}
+
+.texts b {
+    font-size: 17px;
+    font-weight: 600;
+}
+
+.price {
+    color: #015D20;
+}
+
+.announcement img {
+    width: 175px;
+}
+
+.our-products {
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.our-products h2 {
+    font-weight: 600;
+}
+
+.products-container {
+    display: flex;
+    align-items: center;
+    margin-top: 50px;
+    overflow: hidden;
+    position: relative;
+    gap: 50px;
+    width: 1020px;
+}
+
+.move {
+    font-size: 40px;
+    font-weight: 500;
+    margin-bottom: 50px;
+    cursor: pointer;
+    transition: .3s;
+    user-select: none;
+    position: absolute;
+    top: 50%;
+}
+
+.back {
+    left: -60px;
+}
+
+.next {
+    right: -60px;
+}
+
+.move:hover {
+    color: #5c5c5c;
+}
+
+.item-content {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    cursor: pointer;
+    flex-shrink: 0;
+    transition: transform .3s ease;
+    transform: translateX(-260px);
+}
+
+.item {
+    width: 215px;
+    height: 205px;
+    background-color: white;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    position: relative;
+}
+
+.plant-img {
+    width: 80%;
+    height: 80%;
+}
+
+.item .cart {
+    width: 25px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    transition: .4s;
+}
+
+.item .cart:hover {
+    transform: scale(1.1);
+}
+
+.info {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.item-name {
+    font-weight: 500;
+}
+
+.item-price {
+    color: #015D20;
+}
+
+/* Loja 2*/
+
+.shop2 {
+    height: 100vh;
+    background-color: #EBEBEB;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.new-products {
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    position: relative;
+}
+
+.new-products .move {
+    position: absolute;
+    top: 53%;
+}
+
+.new-products h2 {
+    font-weight: 600;
+}
+
+/*-----------------footer--------------------*/
+
+footer{
+    background-color: #E0E0E0;
+}

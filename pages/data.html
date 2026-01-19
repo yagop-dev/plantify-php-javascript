@@ -3,53 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Plantify</title>
+    <title>Informações</title>
     <link rel="icon" href="../assets/img/plantify_icon_green.png">
     <link rel="stylesheet" href="../assets/css/style.css">
     <link rel="stylesheet" href="../assets/css/data.css">
 </head>
 <body>
-    <header class="mobile-header">
-        <nav>
-            <img src="../assets/img/nav_icon.png" alt="navigation menu" id="nav-img">
-        </nav>
-        <div class="logo">
-            <img src="../assets/img/plantify_icon_green.png" alt="logo" id="logo-img">
-            <h3>Plantify</h3>
-        </div>
-        <div class="header-buttons">
-            <button class="header-button">
-                <img src="../assets/img/search_icon.png" alt="search button" id="search-img">
-            </button>
-            <button class="header-button">
-                <img src="../assets/img/shop_icon.png" alt="shop button" id="shop-img">
-            </button>
-        </div>
-    </header>
+    <header></header>
 
-    <header class="desktop-header">
-        <div class="logo">
-            <img src="../assets/img/plantify_icon_green.png" alt="logo" id="logo-img">
-            <h3>Plantify</h3>
-        </div>
-        <div class="home-shop">
-            <button class="home-shop-btn">Home</button>
-            <button class="home-shop-btn">Shop</button>
-        </div>
-        <div class="header-btn-icon">
-            <button class="header-icon">
-                <img src="../assets/img/search_green.png" alt="search button" id="search-img">
-            </button>
-            <button class="header-icon">
-                <img src="../assets/img/cart_green.png" alt="shop button" id="shop-img">
-            </button>
-            <button class="header-icon">
-                <img src="../assets/img/login_green.png" alt="login button" id="login-img">
-            </button>
-        </div>
-    </header>
-
-    <main>
+    <main id="main-data">
         <div class="data-container">
             <div class="container">
                 <p class="title">DADOS DO CLIENTE</p>
@@ -83,7 +45,7 @@
                 <div class="item-title-img">
                     <p class="title-list">LISTA DE PRODUTOS</p>
                     <div class="item-img-name">
-                        <img src="../assets/img/Samambaia.png" alt="Samambaia" id="item-img">
+                        <img src="../assets/img/plants/Samambaia.png" alt="Samambaia" id="item-img">
                         <p id="item-name" class="long-text">Samambaia</p>
                     </div>
                 </div>
@@ -115,7 +77,7 @@
                     <td>SUBTOTAL</td>
                 </tr>
                 <tr>
-                    <td><img src="../assets/img/Samambaia.png" alt="Samambaia" id="item-img"></td>
+                    <td><img src="../assets/img/plants/Samambaia.png" alt="Samambaia" id="item-img"></td>
                     <td>Samambaia</td>
                     <td>R$70,00</td>
                     <td>1</td>
@@ -192,39 +154,19 @@
                         </div>
                     </div>
                     <div class="end-buy">
-                        <button id="buy-btn" href="../pages/checkout.html">Finalizar</button>
+                        <a href="../pages/checkout.html">
+                            <button id="buy-btn" href="../pages/checkout.html">Finalizar</button>
+                        </a>
                     </div>
                 </div>
             </div>
         </div>
     </main>
 
-    <footer>
-        <div class="logo-footer">
-            <img src="../assets/img/plantify_icon_black.png" alt="logo" id="logo-img-footer">
-            <h3>Plantify</h3>
-        </div>
-        <div class="footer-infos">
-            <div class="address-footer">
-                <p class="title">Endereço</p>
-                <p>Rua Antônio Pereira de Matos 109</p>
-            </div>
-            <div class="address-footer" id="support-num">
-                <p class="title">Precisa de Ajuda?</p>
-                <p>Ligue: 4343-4122</p>
-            </div>
-            <div class="address-footer" id="follow-icon">
-                <p class="title">Nos siga!</p>
-                <div class="icon-footer-container">
-                    <img src="../assets/img/instagram_icon.png" class="icon-footer">
-                    <img src="../assets/img/linkedin_icon.png" class="icon-footer">
-                </div>
-            </div>
-        </div>
-        <hr>
-        <p id="copy-mobile">Copyright © Plantify.</p>
-        <p id="copy-desktop">Copyright © Plantify. Todos os direitos reservados</p>
-    </footer>
+    <footer></footer>
 
+    <script src="../assets/js/data.js"></script>
+
+    <script src="../assets/js/script.js" data-logo="plantify_icon_green.png" data-search="search_green.png" data-cart="cart_green.png" data-login="login_green.png" data-profile="profile_green.png"></script>
 </body>
 </html>

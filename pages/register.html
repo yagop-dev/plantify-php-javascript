@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+
+    <link rel="icon" href="../assets/img/plantify_icon_green.png">
+    <link rel="stylesheet" href="../assets/css/register.css">
+    <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+    <header></header>
+
+    <main>
+        <div class="bg-plants">
+            <img src="../assets/img/plant_bg2.png" class="decoration">
+            <img src="../assets/img/plant_bg2.png" class="decoration2">
+        </div>
+
+        <h1>CADASTRO</h1>
+
+        <form action="../assets/php/register.php" id="form" method="POST">
+            <div class="column">
+                <div class="input-container">
+                    <div class="input-content">
+                        <label for="name">Nome:</label>
+                        <input type="text" id="name" name="name">
+                    </div>
+
+                    <span class="error error-nome"></span>
+                </div>
+
+                <div class="input-container">
+                    <div class="input-content">
+                        <label for="email">E-mail:</label>
+                        <input type="email" id="email" name="email">
+                    </div>
+
+                    <span class="error error-email"></span>
+                </div>
+                
+                <div class="input-container">
+                    <div class="input-content">
+                        <label for="password">Senha:</label>
+                        <input type="password" id="password" name="password">
+                    </div>
+                    
+                    <span class="error error-senha"></span>
+                </div>
+            </div>
+
+            <div class="column">
+                <div class="input-container">
+                    <div class="input-content">
+                        <label for="dataNasc">Data Nasc:</label>
+                        <input type="date" id="dataNasc" name="dataNasc">
+                    </div>
+                    
+                    <span class="error error-dataNasc"></span>
+                </div>
+                
+                <div class="input-container">
+                    <div class="input-content">
+                        <label for="rg">RG:</label>
+                        <input type="text" id="rg" minlength="9" maxlength="9" name="rg">
+                    </div>
+
+                    <span class="error error-rg"></span>
+                </div>
+                
+                <div class="input-container">
+                    <div class="input-content">
+                        <label for="cpf">CPF:</label>
+                        <input type="text" id="cpf" minlength="11" maxlength="11" name="cpf">
+                    </div>
+
+                    <span class="error error-cpf"></span>
+                </div>
+            </div>
+        </form>
+
+        <div class="btn-content">
+            <span class="success"></span>
+            <button type="submit" form="form">Cadastrar</button>
+        </div>
+    </main>
+
+    <footer></footer>
+
+    <script src="../assets/js/script.js" data-logo="plantify_icon_green.png" data-search="search_green.png" data-cart="cart_green.png" data-login="login_green.png" data-profile="profile_green.png"></script>
+
+    <script src="../assets/js/register.js"></script>
+</body>
+</html>

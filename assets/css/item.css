@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+    list-style: none;
+    text-decoration: none;
+    background-color: transparent;
+}
+
+body {
+    height: 100vh;
+    background-color: #D0C9C4;
+}
+
+.brand {
+    color: rgb(0, 0, 0);
+}
+
+li {
+    color: rgb(0, 0, 0);
+}
+
+li:hover {
+    color: rgb(85, 85, 85);
+}
+
+/*main*/
+
+main {
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+    gap: 50px;
+    padding: 0 300px 50px 300px;
+}
+
+.product-container {
+    display: flex;
+    gap: 80px;
+}
+
+.product-content{
+    width: 600px;
+    height: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    border: 3px solid black;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.product-content img {
+    height: 300px;
+}
+
+.product-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.name {
+    font-weight: 600;
+    font-size: 19px;
+}
+
+.info {
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    font-size: 18px;
+}
+
+.price {
+    font-weight: 500;
+}
+
+.buy-content {
+    display: flex;
+    gap: 30px;
+}
+
+.amount {
+    display: flex;
+}
+
+.value {
+    width: 50px;
+    height: 40px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn {
+    width: 30px;
+    height: 40px;
+    background-color: #d9d9d9;
+    border-radius: 5px 0 0 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 500;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.btn:hover {
+    background-color: #cfcfcf;
+}
+
+.increase {
+    transform: scale(-1);
+}
+
+.buy-content button {
+    width: 250px;
+    height: 40px;
+    background-color: #979797;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.buy-content button:hover {
+    background-color: #858585;
+}
+
+.details {
+    width: 700px;
+    display: flex;
+    flex-direction: column;
+    font-size: 17px;
+    gap: 10px;
+}
+
+.details b {
+    font-weight: 600;
+}
+
+/*--------------footer------------------*/
+
+footer{
+    background-color: #E0E0E0;
+    position: absolute;
+    bottom: 0;
+}

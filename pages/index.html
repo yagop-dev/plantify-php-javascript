@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plantify</title>
+    <link rel="icon" href="../assets/img/plantify_icon_green.png">
+    <link rel="stylesheet" href="../assets/css/index.css">
+    <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+    <main>
+        <img src="../assets/img/wave.svg" class="wave">
+
+        <header></header>
+
+        <div class="content">
+            <div class="title">
+                <span>Trazendo Natureza Pra Sua Casa</span>
+                <img src="../assets/img/plantify_icon.png">
+            </div>
+
+            <span class="callToAction">Comece sua jornada para uma vida mais verde com Plantify!</span>
+
+            <hr>
+
+            <a href="#shop"><button id="buy-btn">Compre Agora!</button></a>
+        </div>
+    </main>
+
+    <div class="shop" id="shop">
+        <div class="new-arrivals-content">
+            <div class="announcement">
+                <div class="texts">
+                    <span>Novos Chegados</span>
+                    <b>Plantas de Casa</b>
+                    <span>até</span>
+                    <span class="price">R$70,00</span>
+                </div>
+
+                <img src="../assets/img/plants/new_arrivals_1.png">
+            </div>
+
+            <div class="announcement">
+                <div class="texts">
+                    <span>Novos Chegados</span>
+                    <b>Pothos Neon</b>
+                    <span>até</span>
+                    <span class="price">R$40,00</span>
+                </div>
+                
+                <img src="../assets/img/plants/new_arrivals_2.png">
+            </div>
+        </div>
+
+        <div class="our-products">
+            <h2>Nossos Produtos</h2>
+
+            <span class="move back"><</span>
+            <div class="products-container">
+
+                <div class="item-content" onclick="handleClick(2)">
+                    <div class="item">
+                        <img src="../assets/img/plants/Samambaia.png" class="plant-img">
+                        <img src="../assets/img/cart.png" class="cart">
+                    </div>
+
+                    <div class="info">
+                        <div class="item-name">Samambaia</div>
+                        <div class="item-price">R$24.90</div>
+                    </div>
+                </div>
+
+                <div class="item-content" onclick="handleClick(3)">
+                    <div class="item">
+                        <img src="../assets/img/plants/Peperomia.png" class="plant-img">
+                        <img src="../assets/img/cart.png" class="cart">
+                    </div>
+
+                    <div class="info">
+                        <div class="item-name">Peperômia</div>
+                        <div class="item-price">R$32.90</div>
+                    </div>
+                </div>
+
+                <div class="item-content" onclick="handleClick(4)">
+                    <div class="item">
+                        <img src="../assets/img/plants/Pilea.png" class="plant-img">
+                        <img src="../assets/img/cart.png" class="cart">
+                    </div>
+
+                    <div class="info">
+                        <div class="item-name">Pilea</div>
+                        <div class="item-price">R$34.90</div>
+                    </div>
+                </div>
+
+                <div class="item-content" onclick="handleClick(5)">
+                    <div class="item">
+                        <img src="../assets/img/plants/Zamioculca.png" class="plant-img">
+                        <img src="../assets/img/cart.png" class="cart">
+                    </div>
+
+                    <div class="info">
+                        <div class="item-name">Zamioculca</div>
+                        <div class="item-price">R$49.90</div>
+                    </div>
+                </div>
+
+                <div class="item-content" onclick="handleClick(1)">
+                    <div class="item">
+                        <img src="../assets/img/plants/AloeVera.png" class="plant-img">
+                        <img src="../assets/img/cart.png" class="cart">
+                    </div>
+
+                    <div class="info">
+                        <div class="item-name">Aloe Vera</div>
+                        <div class="item-price">R$29.90</div>
+                    </div>
+                </div>
+            </div>
+
+            <span class="move next">></span>
+        </div>
+    </div>
+
+    <div class="shop2">
+        <div class="new-products">
+            <h2>Novos Produtos</h2>
+
+            <span class="move back"><</span>
+
+            <div class="products-container">
+                <div class="item-content" onclick="handleClick(6)">
+                    <div class="item">
+                        <img src="../assets/img/plants/PothosNeon.png" class="plant-img">
+                        <img src="../assets/img/cart.png" class="cart">
+                    </div>
+
+                    <div class="info">
+                        <div class="item-name">Pothos Neon</div>
+                        <div class="item-price">R$27.90</div>
+                    </div>
+                </div>
+
+                <div class="item-content" onclick="handleClick(7)">
+                    <div class="item">
+                        <img src="../assets/img/plants/AlocasiaPolly.png" class="plant-img">
+                        <img src="../assets/img/cart.png" class="cart">
+                    </div>
+
+                    <div class="info">
+                        <div class="item-name">Alocasia Polly</div>
+                        <div class="item-price">R$59.90</div>
+                    </div>
+                </div>
+
+                <div class="item-content" onclick="handleClick(8)">
+                    <div class="item">
+                        <img src="../assets/img/plants/SyngoniumPink.png" class="plant-img">
+                        <img src="../assets/img/cart.png" class="cart">
+                    </div>
+
+                    <div class="info">
+                        <div class="item-name">Syngonium Pink</div>
+                        <div class="item-price">R$39.90</div>
+                    </div>
+                </div>
+
+                <div class="item-content" onclick="handleClick(9)">
+                    <div class="item">
+                        <img src="../assets/img/plants/CalatheaOrbifolia.png" class="plant-img">
+                        <img src="../assets/img/cart.png" class="cart">
+                    </div>
+
+                    <div class="info">
+                        <div class="item-name">Calathea Orbifolia</div>
+                        <div class="item-price">R$64.90</div>
+                    </div>
+                </div>
+
+                <div class="item-content" onclick="handleClick(10)">
+                    <div class="item">
+                        <img src="../assets/img/plants/PothosMarbleQueen.png" class="plant-img">
+                        <img src="../assets/img/cart.png" class="cart">
+                    </div>
+
+                    <div class="info">
+                        <div class="item-name">Pothos Marble Queen</div>
+                        <div class="item-price">R$29.90</div>
+                    </div>
+                </div>
+
+            </div>
+
+            <span class="move next">></span>
+        </div>
+
+        <footer></footer>
+    </div>
+    
+    <script src="../assets/js/script.js" data-logo="plantify_icon.png" data-search="search.png" data-cart="cart.png" data-login="login.png" data-profile="profile.png"></script>
+</body>
+</html>
